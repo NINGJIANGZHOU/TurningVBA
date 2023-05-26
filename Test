@@ -1,0 +1,11 @@
+Sub AddAndOutput()
+    Dim result As Integer
+   
+    ' Replace A1 and A2 with the cells you want to add
+    result = Range("A1").Value + Range("A2").Value
+   
+    ' Replace yourusername with your actual username
+    Open "C:\Users\john.ning\Desktop\result.txt" For Output As #1
+    Print #1, result
+    Close #1
+End Sub
